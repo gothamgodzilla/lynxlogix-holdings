@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>Paywall — Donations &amp; Products</title><link rel="stylesheet" href="css/piano.css" /></head>
+<body>
+<nav class="top"><div class="wrap row"><a class="brand" href="index.html">Register<small>Paywall</small></a><div class="nav-links"><a href="index.html">House</a><a class="active" href="pay.html">Paywall</a><a href="https://www.mangasm.app/plus">Mangasm+</a></div></div></nav>
+<header class="hero wrap"><div class="kicker">Working register · wire your live links in one file</div><h1>Pay for the<br>work.</h1><p class="lede">Three doors: rebuild gift, Mangasm+, UHNW desk retainer. Day-01 uses live Mangasm+ plus Stripe/Whop slots in js/pay-config.js.</p></header>
+<section class="wrap" id="rebuild"><div class="grid three">
+<div class="card"><div class="meta">Donation</div><h3>Rebuild gift</h3><p>$25 · $100 · $1,000 toward Mangasm safety work.</p><div class="cta-row"><a class="btn solid" id="btn-gift" href="#intent">Give</a></div></div>
+<div class="card"><div class="meta">Product</div><h3>Mangasm+</h3><p>$9.99 monthly or $24.99 quarterly on the existing web cash path.</p><div class="cta-row"><a class="btn solid" href="https://www.mangasm.app/plus">Buy Plus</a></div></div>
+<div class="card" id="desk"><div class="meta">1% retainer</div><h3>Desk counsel</h3><p>$2,500 / mo for human-gated briefs. No pooled funds. You keep the keys.</p><div class="cta-row"><a class="btn solid" id="btn-retain" href="#intent">Retain</a></div></div>
+</div></section>
+<section class="wrap" id="intent"><h2>Intent slip</h2>
+<form class="card" action="mailto:pay@lynxlogix.net" method="post" enctype="text/plain">
+<label>Name</label><input name="name" required placeholder="How we address you" />
+<label>Email</label><input name="email" type="email" required />
+<label>Item</label><select name="item"><option>Rebuild gift $25</option><option>Rebuild gift $100</option><option>Rebuild gift $1,000</option><option>Mangasm+ monthly</option><option>Mangasm+ quarterly</option><option>UHNW desk retainer $2,500</option><option>Custom commission</option></select>
+<label>Note</label><textarea name="note" rows="4" placeholder="What should we know?"></textarea>
+<div class="cta-row"><button class="btn solid" type="submit">Send intent</button></div>
+<p class="notice">Fallback paywall. Paste Stripe or Whop URLs into js/pay-config.js to jump straight to card checkout.</p>
+</form></section>
+<script src="js/pay-config.js"></script>
+<footer><div class="wrap">No custody of client crypto. No investment contract on this page.</div></footer>
+</body></html>
